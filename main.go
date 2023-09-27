@@ -9,7 +9,7 @@ var DB *gorm.DB = InitDb()
 
 func main() {
 	DB.AutoMigrate(&Product{})
-	r := gin.Default()
+	 r := gin.Default()
 	initRoutes(r)
 	r.Run()
 }
